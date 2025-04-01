@@ -20,7 +20,7 @@
     "lint": "./node_modules/.bin/eslint --max-warnings=0 .",
     "serve": "firebase -P davids-parts-v1-9rstyy emulators:start --only functions",
     "shell": "firebase -P davids-parts-v1-9rstyy functions:shell",
-    "start": "npm run shell",
+    "start": "node init && npm run shell",
     "logs": "firebase -P davids-parts-v1-9rstyy functions:log",
     "compile": "cp ../../tsconfig.template.json ./tsconfig-compile.json && tsc --project tsconfig-compile.json"
   },
